@@ -41,7 +41,6 @@
         </ul>
       </section>
 
-    <hr>
       <section>
         <h3>unfinished business</h3>
         <p>Things that were unfinished since last meeting:</p>
@@ -52,7 +51,6 @@
         </ul>
       </section>
       
-    <hr>
       <section>
         <h3>new ideas</h3>
         <p>Things that are new and need to be talked about:</p>
@@ -63,7 +61,6 @@
         </ul>
       </section>
 
-    <hr>
       <section>
         <h3>miscellaneous ideas</h3>
         <p>Any questions, comments, or concerns that should be noted:</p>
@@ -83,7 +80,6 @@
       <img src="./assets/whiteboard.png" alt="whiteboard image" width="600"/>
     </section>
 
-    <hr>
     <section>
       <h3>piano</h3>
       <audio controls>
@@ -91,7 +87,6 @@
       </audio>
     </section>
 
-    <hr>
     <section>
       <h3>squirrel</h3>
       <video width="400" height="600" controls>
@@ -100,12 +95,66 @@
       </video>
     </section>
 
+    <details>
+      <summary>Details</summary>
+      that was a video of a squirrel about to attack me, wtf
+    </details>
+
     <section>
-      <h3>form<h3>
-      <details>
-        <summary>Details</summary>
-        Something small enough to escape casual notice.
-      </details>
+      <h3>form</h3>
+    </section>
+
+    <section>
+        <form>
+          <fieldset>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <label>about you</label><br>
+            <textarea id="about" rows=5 cols=50 placeholder="write about yourself!"></textarea><br>
+
+            <br><label>editor</label><br>
+            <input type="checkbox" id="opt1" name="vim" value="Bike">
+            <label for="opt1">vim</label><br>
+            <input type="checkbox" id="opt2" name="eclipse" value="Car">
+            <label for="opt2">eclipse</label><br>
+            <input type="checkbox" id="opt3" name="vscode" value="Boat">
+            <label for="opt3">vscode</label><br><br>
+
+            <label>favorite letter</label>
+            <br>
+            <div>
+              <input type="radio" id="c1" name="letter" value="a">
+              <label for="c1">a</label><br>
+              <input type="radio" id="c2" name="letter" value="b">
+              <label for="c2">b</label><br>
+              <input type="radio" id="c3" name="letter" value="c">
+              <label for="c3">c</label><br>
+              <input type="radio" id="c4" name="letter" value="d">
+              <label for="c4">d</label><br><br>
+            </div>
+
+            <label>favorite number</label><br>
+            <input list="num" name="numbers" id="n">
+            <datalist id="num">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+            </datalist><br><br>
+
+            <label>favorite food</label><br>
+            <select name="food" id="foodie">
+              <option value="cake">cake</option>
+              <option value="pizza">pizza</option>
+              <option value="jerk">vegan jerky</option>
+            </select><br><br>
+
+            <button type="button">Submit</button>
+          </fieldset>
+        </form>
     </section>
 
     <hr>
