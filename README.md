@@ -1,3 +1,3 @@
-# Lab 2 - Starter
-website [link](https://thekangster.github.io/Lab2_Starter/)
+# sp23-cse110-lab3
+website [link](https://thekangster.github.io/sp23-cse110-lab3)
 
