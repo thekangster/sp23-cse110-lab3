@@ -4,18 +4,36 @@
     <title>cse110 lab 2: Meeting Minutes</title>
     <meta charset="UTF-8">
     <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   </head>
   <body>
+    <style>
+      body {
+        background-color: linen;
+      }
+    </style>
+
     <header>
-      <h1>group brainstorm</h1>
+      <h1 style="color:hsl(203, 92%, 19%);">group brainstorm</h1>
       <h2>discussion of potential project</h2>
-      <h2><em>april 12, 2023</em></h2>
+      <h2><em><div class="date">april 12, 2023</div></em></h2>
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="ktkang@ucsd.edu">email</a></li>
+        <li><a href="github.com/thekangster">github</a></li>
+        <li><a href="https://github.com/thekangster/sp23-cse110-lab3">repo</a></li>
+      </ul>
+    </nav>
 
     <hr>
     <section>
       <h3>attendance</h3>
-      <p>Check your name when you <b>arrive</b>:</p>
+      <p>Check your name when you <span><b>arrive</b></span>:</p>
       <div>
         <input type="checkbox"><i>Kevin Kang</i>
       </div>
@@ -65,19 +83,23 @@
         <h3>miscellaneous ideas</h3>
         <p>Any questions, comments, or concerns that should be noted:</p>
         <ol>
-          <li>Kevin wants to use vim for his editor</li>
+          <div class="mitem">
+          <li>Kevin wants to use vim for his editor <ul><li>this is the best option</li></ul></li>
           <li>John wants to use vscode for his editor</li>
           <li>Jane wants to use eclipse for her editor</li>
+          </div>
         </ol>
       </section>
     </main>
 
     <hr>
+    <p>fake</p>
+    <p class="fake">nothing on this webpage ever happened at all</p>
     <section>
       <h3>whiteboard ideas</h3>
       this is a fake whiteboard sketch<br>which was not discussed in the meeting
-      <br>in fact, nothing on this webpage ever happened at all<br>
       <img src="./assets/whiteboard.png" alt="whiteboard image" width="600">
+      <p><br>in fact, nothing on this webpage ever happened at all<br></p>
     </section>
 
     <section>
@@ -152,7 +174,7 @@
               <option value="jerk">vegan jerky</option>
             </select><br><br>
 
-            <button type="button">Submit</button>
+            <button type="button" class="submit">Submit</button>
           </fieldset>
         </form>
     </section>
@@ -160,12 +182,13 @@
     <hr>
     <footer>
       notes taken by <strong>kevin kang</strong>
-      <nav>
-        <span>
-          <a href="ktkang@ucsd.edu">email</a> |
-          <a href="github.com/thekangster">github</a> |
-          <a href="github.com/thekangster/Lab2_Starter">repo</a>
-        </span>
+      <nav id="bottom">
+        <ul>
+          <li><a href="ktkang@ucsd.edu">email</a></li>
+          <li><a href="github.com/thekangster">github</a></li>
+          <li><a href="https://github.com/thekangster/sp23-cse110-lab3">repo</a></li>
+          <li><a href="google.com">random</a></li>
+        </ul>
       </nav>
     </footer>
   </body>

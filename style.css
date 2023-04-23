@@ -1,0 +1,131 @@
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* making heading look nicer */
+h1 {
+  color: #253da1;
+  text-align: center;
+  text-decoration: underline red;
+  font-size: 1cm;
+}
+
+h2 {
+  font-size: 0.75cm;
+  display: block;
+}
+
+img {
+  position: static;
+}
+
+video {
+  position: relative;
+}
+
+input {
+  height: 100%;
+  width: 20%;
+  min-width: 10%;
+  max-width: 30%;
+}
+
+.date:hover {
+  color: red;
+}
+
+.submit {
+    width: 10em;
+    height: 5ex;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bottom ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+a[href="google.com"] {
+  color: red;
+}
+
+a:hover {
+  text-decoration: green wavy underline;
+}
+
+ul {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0b385f;
+  border-radius: 10px;
+  padding: .5em .5em .5em 1em;
+  margin: auto;
+}
+
+.mitem {
+  border: 1pt solid rgb(20,20,20);
+  padding-top: 1lh;
+  padding-bottom: 1lh;
+  padding-right: 1lh;
+  padding-left: 1lh;
+  margin: 1mm 1mm 1mm 1mm;
+}
+
+p > span {
+  text-decoration: underline;
+}
+
+img ~ p {
+  color: gray;
+}
+
+hr + p {
+  font-size: 24px;
+}
+
+p.fake {
+  margin-top:-20px;
+  font-size: 10px;
+}
+
+li li {
+  list-style-type: circle;
+}
+
+ol {
+  display: inline-block;
+  list-style: none;
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+  margin-right: 1ex;
+  margin-left: -5ex;
+}
+
+@media (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+
