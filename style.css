@@ -1,3 +1,8 @@
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 /* making heading look nicer */
 h1 {
   color: #253da1;
@@ -52,7 +57,7 @@ nav ul {
   align-items: center;
 }
 
-.bottom ul {
+#bottom ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -60,17 +65,24 @@ nav ul {
   row-gap: 15px;
 }
 
+a[href="google.com"] {
+  color: red;
+}
+
+a:hover {
+  text-decoration: green wavy underline;
+}
+
 ul {
   border-width: 2px;
   border-style: solid;
   border-color: #0b385f;
   border-radius: 10px;
-  padding: .5em .5em .5em .5em;
+  padding: .5em .5em .5em 1em;
   margin: auto;
 }
 
-.block,
-li {
+.mitem {
   border: 1pt solid rgb(20,20,20);
   padding-top: 1lh;
   padding-bottom: 1lh;
@@ -79,15 +91,41 @@ li {
   margin: 1mm 1mm 1mm 1mm;
 }
 
-ul {
+p > span {
+  text-decoration: underline;
+}
+
+img ~ p {
+  color: gray;
+}
+
+hr + p {
+  font-size: 24px;
+}
+
+p.fake {
+  margin-top:-20px;
+  font-size: 10px;
+}
+
+li li {
+  list-style-type: circle;
+}
+
+ol {
   display: inline-block;
   list-style: none;
   margin-top: 1ex;
   margin-bottom: 1ex;
   margin-right: 1ex;
-  margin-left: 1ex;
+  margin-left: -5ex;
 }
 
-.block {
-  display: block;
-}     
+@media (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+

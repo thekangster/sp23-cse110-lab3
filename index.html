@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   </head>
   <body>
     <style>
@@ -30,7 +33,7 @@
     <hr>
     <section>
       <h3>attendance</h3>
-      <p>Check your name when you <b>arrive</b>:</p>
+      <p>Check your name when you <span><b>arrive</b></span>:</p>
       <div>
         <input type="checkbox"><i>Kevin Kang</i>
       </div>
@@ -80,19 +83,23 @@
         <h3>miscellaneous ideas</h3>
         <p>Any questions, comments, or concerns that should be noted:</p>
         <ol>
-          <li>Kevin wants to use vim for his editor</li>
+          <div class="mitem">
+          <li>Kevin wants to use vim for his editor <ul><li>this is the best option</li></ul></li>
           <li>John wants to use vscode for his editor</li>
           <li>Jane wants to use eclipse for her editor</li>
+          </div>
         </ol>
       </section>
     </main>
 
     <hr>
+    <p>fake</p>
+    <p class="fake">nothing on this webpage ever happened at all</p>
     <section>
       <h3>whiteboard ideas</h3>
       this is a fake whiteboard sketch<br>which was not discussed in the meeting
-      <br>in fact, nothing on this webpage ever happened at all<br>
       <img src="./assets/whiteboard.png" alt="whiteboard image" width="600">
+      <p><br>in fact, nothing on this webpage ever happened at all<br></p>
     </section>
 
     <section>
@@ -175,7 +182,7 @@
     <hr>
     <footer>
       notes taken by <strong>kevin kang</strong>
-      <nav class="bottom">
+      <nav id="bottom">
         <ul>
           <li><a href="ktkang@ucsd.edu">email</a></li>
           <li><a href="github.com/thekangster">github</a></li>
